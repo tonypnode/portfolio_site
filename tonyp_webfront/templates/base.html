@@ -19,24 +19,29 @@
 </head>
 
 <body>
-<div class="container-fluid">
-    <div class="topnav" id="TP-TopNav">
-      <a class="active" href="#home">Home</a>
-      <a href="#Resume">Resume</a>
-      <a href="#About Me">About Me</a>
-      <a href="#Experience">Experience</a>
-      <a href="#Portfolio">Portfolio</a>
-        <a href="javascript:void(0);" class="icon" onclick="topNavResponse()">
-            <i class="fa fa-bars"></i>
-        </a>
 
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+  <div class="container">
+    <a class="navbar-brand" href="#">Anthony "TonyPNode" Pillitiere</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
+
     {% block body %}
     {% endblock %}
-    <div class="select2-container--below">
-        <p><a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by rawpixel.com -    www.freepik.com... cuz I'm not an artist :)</a></p>
-    </div>
-</div>
+
 </body>
 </html>
 
