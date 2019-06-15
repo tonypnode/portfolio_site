@@ -8,3 +8,12 @@ body {
   -o-background-size: cover;
 
 }
+
+#purpleMonkey {
+  max-width: 10%;
+}
+
+#famPic {
+  max-width: 40%;
+}
+
