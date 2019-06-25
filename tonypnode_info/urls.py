@@ -13,13 +13,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.urls import path, re_path
+from django.urls import path
 from tonyp_webfront.views import home_page
 
 urlpatterns = [
     path('', home_page),
-    re_path(r'/bad/lost\.html', home_page),
-    re_path(r'/bad/broke\.html', home_page),
-
 
 ]

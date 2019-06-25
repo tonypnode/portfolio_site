@@ -5,7 +5,12 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tonypnode_info.settings')
+    #TODO Not sure I need this either, this only hits when running the dev webserver
+    if os.environ.get('IS_PROD', '') == 'AWS':
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tonypnode_info.settings.prod')
+    else:
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tonypnode_info.settings.local_dev')
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
