@@ -17,5 +17,11 @@ body {
   max-width: 80%;
 }
 
+#navLink {
+  max-width: 41px;
+}
 
+#extLinkIMG{
+  max-width: 60px;
+}
 

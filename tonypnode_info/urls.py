@@ -18,8 +18,7 @@ from tonyp_webfront.views import home_page
 
 urlpatterns = [
     path('', home_page),
-    re_path(r'/bad/lost\.html', home_page),
-    re_path(r'/bad/broke\.html', home_page),
-
+    # re_path(r'bad/lost\.html', home_page),
+    # re_path(r'bad/broke\.html', home_page),
 
 ]
