@@ -21,7 +21,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '^9y+k@f79^anyj-zv+9%c9#-sqcdb0x2!lw0zayhc%+5*#48fK')
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+
+DEBUG = False
 
 ALLOWED_HOSTS = ['www.tonypnode.info', ]
 
