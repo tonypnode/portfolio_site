@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/tonypnode/portfolio_site.svg?branch=master)](https://travis-ci.org/tonypnode/portfolio_site)
 ___
 
-I wanted build a portfolio site to ease my anxiety about transitioning out of the military 
+I wanted build a portfolio site (http://www.tonypnode.info) to ease my anxiety about transitioning out of the military 
 and into civilan life. Just the thought of working on a resume gives me a headache haha.
 
 But... cooking up a web application with test driven development , infrastructure as code, 
