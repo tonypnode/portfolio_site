@@ -9,10 +9,9 @@ env:
 before_install:
   - export DJANGO_SECRET_KEY='2oejofSDFOIQefjei2379#&#'
   - export PYTHONPATH=$HOME/builds/tonypnode/portfolio_site
-  -
-install:
-  - pip3 install -r requirements.txt
 
+install:
+  - pip install -r requirements.txt
 
 script:
-  - python3 manage.py test
+  - python manage.py test
