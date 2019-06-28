@@ -40,6 +40,6 @@ implementation.
 And if I'm wrong about all that, and this is completely irrelevant to potential employers... meh, I'm having a blast working on it, 
 and maybe someone else will learn something from it :)
  
-I'll post the particulars about the project later, I just wanted to close out [issue 4 - Add to Travis] (https://github.com/tonypnode/portfolio_site/issues/4)
+I'll post the particulars about the project later, I just wanted to close out [issue 4 - Add to Travis](https://github.com/tonypnode/portfolio_site/issues/4)
  and put my [![Build Status](https://travis-ci.org/tonypnode/portfolio_site.svg?branch=master)](https://travis-ci.org/tonypnode/portfolio_site)
  badge in here. it's late and I'm tired. 
