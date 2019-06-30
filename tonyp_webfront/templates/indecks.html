@@ -25,8 +25,80 @@
             service delivery to our users. In addition, by leveraging my 23 years in ITOps and vast professional network,
             I have been able to drive a digital transformation in my organization and spark the same in others.
             Finally, I love learning new things and sharing my knowledge and experience with those around me.
-        <p class="font-weight-light"><h3>Roles and Responsibilities</h3>
-        <ul>
+    </div>
+
+  </div>
+    <div class="card border-0 shadow my-5">
+        <div class="card-body p-5">
+        <div class="container">
+            <p class="font-weight-light"><h3>What Is This Site?</h3>
+            <div class="container">
+                This website is not a wordpress representation
+                of my <a href="https://linkedin.com/in/tonypnode/">linked in profile.</a> and resume. It does have a
+                quick view of my previous roles and a list of skills and whatnot and if that's what your here for
+                keep on scrolling, you'll see it. This site IS however, much more than that. I thought it would be
+                beneficial (and a whole lot of fun for me) to provide an actual live demonstration of some of my
+                capabilities. The entire website and all the things directly and indirectly related is just that.
+                <br/>
+                <ul>
+                    <li>Front end</li>
+                    <li>Backend</li>
+                    <li>Security Analysis</li>
+                    <li>Data Analytics</li>
+                    <li>CI/CD Pipeline</li>
+                    <li>Database</li>
+                    <li>Provisioning Automation</li>
+                    <li>Configuration Management Automation</li>
+                    <li>Service Level Indicators (SLIs)/Service Level Objectives (SLOs)</li>
+                </ul>
+                <p>
+                    This site is built in AWS. I could have done a static site generator like
+                    <a href="https://github.com/getpelican/pelican">Pelican</a> or <a href="https://github.com/hyde/hyde">
+                    Hyde</a>, and AWS S3, but that wouldn't have been much fun. To be useful and fun for me, I chose
+                    Python and Django. Flask would have been just as fun. I chose Django because I wanted the batteries
+                    included. The project is still too early on to know exactly how I want it to look. As I continue
+                    to develop, I will add more. For instance, while I was typing this up, I realized I don't have
+                    Lambda functions running and would like to include that. I added issue #21 to
+                    <a href="https://github.com/tonypnode/portfolio_site/projects/1"> the Kanban board in the github</a>
+                    I'm using to develop the project.
+                </p>
+                <p>
+                    The entire project is being developed via Test Driven Development (TDD) and is before I commit,
+                    I run my tests locally. Once I push to github (usually to a feature branch, unless it's just html),
+                    it runs through <a href="https://travis-ci.org/tonypnode/portfolio_site">Travis CI</a>, where
+                    I'm testing for python 3.6 and 3.7.
+                </p>
+                <p>
+                    There is also the security and analytics side. I have a few features you take a look at in the
+                    project, but, I'm dropping my ALB logs into S3 and then scraping them with my demo version of Splunk.
+                    I have built out a dashboard to track a few things:
+                <ul>
+                    <li>Number of unique visitors</li>
+                    <li>Their location</li>
+                    <li>Service Level Objective</li>
+                    <li>Not-so-normal Calls to the website
+                        <ul><li>I use this data to block them from getting anything</li></ul></li>
+                </ul>
+                    As I continue to work through the project, I will probably add some more. I also created a Splunk app
+                to that integrates with <a href="https://www.pushbullet.com">pushbullet</a>, so I can get a daily push notifications of
+                unique visitors to the site and immediate alerts of any significant "non-normal" activity.
+                <img src="{% static 'tonyp_webfront/img/site_analysis.png' %}" align="center" class="img-fluid" alt="Dashboard">
+                </p>
+                <p>
+                    You can see where I'm at with the whole project on the Kanban board. There is still a lot to be done.
+                    To be honest, I'm probably just procrastinating finishing my resume. :(
+                </p>
+
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="card border-0 shadow my-5">
+        <div class="card-body p-5">
+        <div class="container">
+            <p class="font-weight-light"><h3>Roles and Responsibilities</h3>
+            <div class="container">
+                <ul>
                 <li><b>Deputy Chief Technology Officer</b> - Special Operations Command Organization, Ft. Bragg NC | June 2019 to Present - Master Sergeant (E-7)<ul>
                         <li>Developing and driving a technology strategy across the special operations community</li>
                         <li>Bring cohesion and collaboration to cross functional and cross organizational teams to identify and reduce duplication</li>
@@ -91,10 +163,10 @@
                 <li><b>Dishwasher</b> Pillitiere's Family Restaurant Akron Ohio
                 </li>
             </ul>
-         </p>
+         </p>        </div>
+        </div>
+        </div>
     </div>
-
-  </div>
     <div class="card border-0 shadow my-5">
         <div class="card-body p-5">
         <div class="container">
@@ -123,7 +195,7 @@
     <div class="card border-0 shadow my-5">
         <div class="card-body p-5">
         <div class="container">
-            <p class="font-weight-light"><h3>My Links</h3>
+            <p class="font-weight-light"><h3>Links To My Schtuff</h3>
             <div class="container">
             <div class="row">
                 <div class="col-sm" align="center">
