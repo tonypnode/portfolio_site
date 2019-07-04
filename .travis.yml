@@ -4,7 +4,7 @@ python:
   - "3.7"
   - "3.6"
 env:
-  -DJANGO=2.2.2
+  -DJANGO=2.2.3
 
 before_install:
   - export DJANGO_SECRET_KEY='2oejofSDFOIQefjei2379#&#'
