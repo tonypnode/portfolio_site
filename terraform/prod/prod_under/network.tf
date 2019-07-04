@@ -1,3 +1,4 @@
+#VPC
 module "tonyp_info_vpc" {
   source = "../../modules/vpc/v1/vpc"
 
@@ -5,6 +6,7 @@ module "tonyp_info_vpc" {
   vpc_cidr = "${var.vpc_cidr}"
 }
 
+#Internet Gateway
 module "inet_gw" {
   source = "../../modules/network/v1/inet_gw"
 
@@ -13,6 +15,7 @@ module "inet_gw" {
   inet_gw_name = "${var.inet_gw_name}"
 }
 
+#NACL
 module "nacl" {
   source = "../../modules/network/v1/nacl"
 
@@ -22,6 +25,7 @@ module "nacl" {
   nacl_tag_name = "${var.nacl_name}"
 }
 
+#Route Table
 module "route_table" {
   source = "../../modules/network/v1/route_table"
 
@@ -31,6 +35,7 @@ module "route_table" {
   default_route_out_gw_id = "${module.inet_gw.inet_gw_id}"
 }
 
+#AZ1 Subnet
 module "subnet1_az1" {
   source = "../../modules/network/v1/network"
 
@@ -40,6 +45,7 @@ module "subnet1_az1" {
   cidr_block_az = "${cidrsubnet("${var.vpc_cidr}", 4, 1)}"
 }
 
+#AZ2 Subnet
 module "subnet1_az2" {
   source = "../../modules/network/v1/network"
 
@@ -49,6 +55,7 @@ module "subnet1_az2" {
   cidr_block_az = "${cidrsubnet("${var.vpc_cidr}", 4, 2)}"
 }
 
+# Load balancer
 module "lb" {
   source = "../../modules/network/v1/lb"
   vpc_id = "${module.tonyp_info_vpc.vpc_id}"
