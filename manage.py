@@ -5,7 +5,6 @@ import sys
 
 
 def main():
-    #TODO Not sure I need this either, this only hits when running the dev webserver
     if os.environ.get('IS_PROD', '') == 'AWS':
         os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tonypnode_info.settings.prod')
     else:
