@@ -44,4 +44,4 @@ Thumbs.db
 
 .terraform/
 terraform.tfstate
-
+.idea/*
