@@ -7,7 +7,7 @@ resource "aws_security_group" "webbox_secgrp" {
     from_port = 8001
     protocol = "tcp"
     to_port = 8001
-    cidr_blocks = ["${var.vpc_elb_ip}"]
+    cidr_blocks = ["${var.az_subnet_cidr}"]
   }
 
 }

@@ -8,4 +8,8 @@ resource "aws_subnet" "subnet_az" {
   # Check Region for AZ Names
   availability_zone = "${var.az_name}"
 
+  tags {
+    "Name" = "${var.subnet_name}"
+  }
+
 }

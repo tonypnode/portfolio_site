@@ -43,6 +43,8 @@ module "subnet1_az1" {
 
   az_name = "${var.az1_name}"
   cidr_block_az = "${cidrsubnet("${var.vpc_cidr}", 4, 1)}"
+
+  subnet_name = "${var.az1_subnet_name}"
 }
 
 #AZ2 Subnet
@@ -53,6 +55,19 @@ module "subnet1_az2" {
 
   az_name = "${var.az2_name}"
   cidr_block_az = "${cidrsubnet("${var.vpc_cidr}", 4, 2)}"
+
+  subnet_name = "${var.az2_subnet_name}"
+
+}
+
+resource "aws_route_table_association" "subnet1_az1_assoc" {
+  route_table_id = "${module.route_table.route_table_id}"
+  subnet_id = "${module.subnet1_az1.subnet_id}"
+}
+
+resource "aws_route_table_association" "subnet1_az2_assoc" {
+  route_table_id = "${module.route_table.route_table_id}"
+  subnet_id = "${module.subnet1_az2.subnet_id}"
 }
 
 # Load balancer

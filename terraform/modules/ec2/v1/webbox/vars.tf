@@ -6,6 +6,10 @@ variable "vpc_id" {
   description = "The ID of the vpc"
 }
 
-variable "vpc_elb_ip" {
+variable "subnet_id" {
+  description = "The Subnet ID for this instance"
+}
+variable "az_subnet_cidr" {
   description = "Internal IP of the LoadBalancer"
 }
+

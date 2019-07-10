@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "tonypnode.info.tf"
-    key    = "prod/terraform.tfstate"
+    key    = "prod_under/terraform.tfstate"
     region = "us-east-1"
   }
 }

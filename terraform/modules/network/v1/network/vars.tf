@@ -9,3 +9,7 @@ variable "cidr_block_az" {
 variable "az_name" {
   description = "AZ Name from Region"
 }
+
+variable "subnet_name" {
+  description = "Name tag of the description"
+}
